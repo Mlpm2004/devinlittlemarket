@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { Provider } from 'react-redux';
+import { BrowserRouter } from 'react-router-dom';
+
+import Menu from './components/Menu';
+
+import Routes from './routes'
+import store from './store';
+
+// 1 - Configurar o componente de Provider no App.js
+// 2 - Configurar o create Store
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+      <BrowserRouter>
+        <Menu />
+        <Routes />
+      </BrowserRouter>
+    </Provider>
   );
 }
 
