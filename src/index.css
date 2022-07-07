@@ -45,17 +45,17 @@ code {
 .produto-item-title {
   font-size: 16px;
   font-weight: bold;
-  color: #9721BD;
+  color: #0a0fb7;
 }
 
 .produto-item-price {
   font-size: 14px;
   font-weight: bold;
-  color: #9721BD;
+  color: #0a0fb7;
 }
 
 .produto-button {
-  background: #9721BD;
+  background: #0a0fb7;
   border: 0;
   border-radius: 5px;
   padding: 5px;
@@ -90,4 +90,35 @@ code {
   color: #FFF;
   font-weight: bold;
   cursor: pointer;
+}
+.table-cart {
+  width: 100%;
+  background: #FFF;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.table-cart thead, th {
+  color: #999;
+  text-align: left;
+  padding: 12px;
+}
+
+.table-cart tbody, th {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.table-image {
+  height: 100px;
+}
+
+.margin-button {
+  margin: 0px 5px;
+}
+.conclui-compra{
+
+    display: flex;
+    justify-content: space-between;
 }
